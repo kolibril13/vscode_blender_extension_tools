@@ -1,0 +1,18 @@
+{
+  "name": "bump-blender-addon-version",
+  "displayName": "Bump Blender Addon Version",
+  "description": "Command palette command to bump patch version in blender_manifest.toml",
+  "version": "1.0.0",
+  "engines": { "vscode": "^1.74.0" },
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:bumpBlenderAddonVersion.run"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "bumpBlenderAddonVersion.run",
+        "title": "Blender: Bump addon version"
+      }
+    ]
+  }
+}
